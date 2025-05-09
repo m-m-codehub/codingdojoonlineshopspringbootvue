@@ -12,6 +12,7 @@
   >
     <!-- siehe Step 5: Form Bindings -->
     <q-form @submit.prevent="submitKunde" class="q-gutter-md">
+
       <!-- siehe Step 5: v-model -->
       <q-input v-model.trim="kunde.vorname" label="Vorname" outlined required />
 
@@ -21,7 +22,7 @@
       <!-- siehe Step 5: v-model -->
       <q-input v-model="kunde.strasse" label="Straße" outlined />
 
-      <!-- siehe Step 6: v-model.number -->
+      <!-- siehe Step 6: Form Bindings mit Modifier -->
       <q-input v-model.number="kunde.plz" label="PLZ" type="number" outlined />
 
       <!-- siehe Step 5: v-model -->
@@ -73,7 +74,9 @@ const submitKunde = () => {
     .then(() => {
       erfolg.value = true;
       $q.notify({ type: 'positive', message: 'Kunde hinzugefügt' });
-      emit('neuHinzugefuegt');
+
+      // korrektes Emit, siehe Step 13: Emits
+      emit('neuHinzugefügt');
 
       // Reset der Felder
       Object.assign(kunde.value, {

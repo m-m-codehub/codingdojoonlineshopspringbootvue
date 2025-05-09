@@ -16,7 +16,7 @@
 - Was habt ihr aus der Vue-Übung mitgenommen?
 - Was war leicht zu verstehen – was hat euch verwirrt?
 - Welche Vue-Konzepte habt ihr schon genutzt?
-- mit Vue Tutorial:
+- [mit Vue Tutorial](https://vuejs.org/tutorial/#step-1):
     - was ist der Unterschied zwischen ref() & reactive() ?
     - was macht v-model ? 
 ---
@@ -61,7 +61,7 @@ Generation Strategies: Table, Sequence, UUID, ...
 ### 4. Komponente NeuerKundeForm analysieren (20–30 Min)
 
 - **Analysiere den Code der Komponente `NeuerKundeForm.vue`, die dazu dient, einen neuen Kunden anzulegen**
-- **branch session/vueeinstieg im Projekt Onlineshop** 
+- du findest diese im **branch session/vueeinstieg im Projekt Onlineshop** 
 
 **Themen:**
 - `ref()` für das Modell
@@ -70,6 +70,7 @@ Generation Strategies: Table, Sequence, UUID, ...
 - `fetch()` mit POST
 - `$q.notify()`
 - `emit('neuHinzugefügt')` → Kommunikation mit Elternkomponente
+
 
 **Reflexionsfragen:**
 - Warum brauchen wir `ref`?

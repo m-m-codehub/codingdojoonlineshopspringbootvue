@@ -13,7 +13,7 @@
     <!-- siehe Step 5: Form Bindings -->
     <q-form @submit.prevent="submitKunde" class="q-gutter-md">
 
-      <!-- siehe Step 5: v-model -->
+      <!-- siehe Step 5 oder Vue Guide: Form Bindings mit Modifier -->
       <q-input v-model.trim="kunde.vorname" label="Vorname" outlined required />
 
       <!-- siehe Step 5: v-model -->
@@ -22,7 +22,7 @@
       <!-- siehe Step 5: v-model -->
       <q-input v-model="kunde.strasse" label="Straße" outlined />
 
-      <!-- siehe Step 6: Form Bindings mit Modifier -->
+      <!-- siehe Step 5 oder Vue Guide: Form Bindings mit Modifier -->
       <q-input v-model.number="kunde.plz" label="PLZ" type="number" outlined />
 
       <!-- siehe Step 5: v-model -->

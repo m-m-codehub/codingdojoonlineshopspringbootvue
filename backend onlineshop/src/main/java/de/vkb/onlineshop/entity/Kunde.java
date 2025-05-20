@@ -3,13 +3,15 @@ package de.vkb.onlineshop.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Entity
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-@Table(name = "kunden")
+
+@Entity
+//@Table(name = "kunden")
 public class Kunde {
 
     @Id

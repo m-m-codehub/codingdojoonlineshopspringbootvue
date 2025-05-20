@@ -58,7 +58,7 @@ const kunde = ref({
 const erfolg = ref(false);
 
 // siehe Step 13: Emits
-const emit = defineEmits(['NeuHinzugefügt']);
+const emit = defineEmits(['NeuHinzugefuegt']);
 
 // siehe Step 4: Event Listeners (`@submit.prevent`)
 const submitKunde = () => {
@@ -76,7 +76,7 @@ const submitKunde = () => {
       $q.notify({ type: 'positive', message: 'Kunde hinzugefügt' });
 
       // korrektes Emit, siehe Step 13: Emits
-      emit('NeuHinzugefügt');
+      emit('NeuHinzugefuegt');
 
       // Reset der Felder
       Object.assign(kunde.value, {

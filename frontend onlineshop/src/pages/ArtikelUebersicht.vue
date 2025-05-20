@@ -5,7 +5,7 @@
       <q-table
         :rows="artikel"
         :columns="columns"
-        row-key="artikelnr"
+        row-key="artikelnummer"
         flat
         bordered
       />
@@ -18,7 +18,7 @@
   const artikel = ref([]);
   
   const columns = [
-    { name: 'artikelnr', label: 'Artikel-Nr.', field: 'artikelnr', align: 'left' },
+    { name: 'artikelnummer', label: 'Artikel-Nr.', field: 'artikelnummer', align: 'left' },
     { name: 'bezeichnung', label: 'Bezeichnung', field: 'bezeichnung', align: 'left' },
     { name: 'preis', label: 'Preis', field: 'preis', align: 'right', format: val => `${val.toFixed(2)} €` },
     { name: 'artikelgruppe', label: 'Artikelgruppe', field: 'artikelgruppe', align: 'left' }

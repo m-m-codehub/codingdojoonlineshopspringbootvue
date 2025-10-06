@@ -22,6 +22,8 @@
       </template>
     </q-table>
 
+    <NeuerKundeForm @NeuHinzugefuegt="loadKunden" />
+
     <q-dialog v-model="dialogVisible">
       <q-card>
         <q-card-section>
@@ -48,6 +50,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { useQuasar } from 'quasar';
+import NeuerKundeForm from 'src/components/NeuerKundeForm.vue';
 
 
 const $q = useQuasar();

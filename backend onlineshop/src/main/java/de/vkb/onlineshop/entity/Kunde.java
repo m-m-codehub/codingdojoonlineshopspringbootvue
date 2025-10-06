@@ -11,7 +11,7 @@ import lombok.*;
 @ToString
 
 @Entity
-//@Table(name = "kunden")
+@Table(name = "kunden")
 public class Kunde {
 
     @Id

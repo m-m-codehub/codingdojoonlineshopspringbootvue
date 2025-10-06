@@ -5,6 +5,7 @@ import de.vkb.onlineshop.service.KundeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -33,6 +34,15 @@ public class KundeController {
         return service.save(kunde);
     }
 
+    @DeleteMapping("/{id}")
+    public String delete(@PathVariable int id) {
+        boolean deleted = service.deleteById(id);
 
+        if (deleted) {
+            return "Löschen erfolgreich";
+        } else {
+            return "Löschen fehlgeschlagen";
+        }
+    }
 
 }

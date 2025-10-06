@@ -36,5 +36,10 @@
       <option name="name" value="libs-snapshot" />
       <option name="url" value="https://repo01.vkbads.de/artifactory/libs-snapshot" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="artifactory-fiae" />
+      <option name="name" value="artifactory-fiae" />
+      <option name="url" value="https://repo01.vkbads.de/artifactory/fiae-mvn-loc" />
+    </remote-repository>
   </component>
 </project>

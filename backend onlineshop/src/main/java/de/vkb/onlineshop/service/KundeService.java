@@ -29,12 +29,8 @@ public class KundeService {
         return repository.save(kunde);
     }
 
-    public boolean deleteById(int id) {
-        if (!repository.existsById(id)) {
-            return false;
-        }
+    public void delete(int id) {
         repository.deleteById(id);
-        return true;
     }
 
 }
